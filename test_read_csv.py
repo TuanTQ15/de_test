@@ -24,7 +24,7 @@ class Testing(unittest.TestCase):
         print(data_expect)
         print(result)
         print("----------------------------------------------------------------------")
-    #Testcase csv có dấu phẩy và không có dấu nháy đôi trong các cột
+    #Testcase csv có dấu phẩy và có dấu nháy đôi trong các cột
     def test_csv_have_quotes_and_comma(self):
         path = "data_unit_test/have_comma_and_quotes.csv"
         result = read_csv(path=path)
